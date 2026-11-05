@@ -1,11 +1,8 @@
-def check_leave_balance(balance, requested):
+def request_leave(balance, requested):
     if requested <= 0:
-        return "Invalid leave request"
+        return "Invalid Request"
 
     if requested <= balance:
-        return "Leave Approved"
+        return "Leave Request Submitted"
 
     return "Insufficient Leave Balance"
-
-
-print(check_leave_balance(10, 3))
